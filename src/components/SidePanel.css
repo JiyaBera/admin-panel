@@ -1,0 +1,31 @@
+.side-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* adjust the width as needed */
+    height: 100vh;
+    background-color: #ffffff; /* dark background */
+    color: #fff; /* white text */
+    padding: 20px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .side-panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .side-panel li {
+    margin-bottom: 10px;
+  }
+  
+  .side-panel a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .side-panel a:hover {
+    color: #3ba5f0; /* light gray on hover */
+  }
