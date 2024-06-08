@@ -1,3 +1,4 @@
+/* Existing styles from provided App.css */
 .App {
   text-align: center;
 }
@@ -35,4 +36,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Additional styles for side panel and content area */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Content area styles */
+.content {
+  margin-left: 250px; /* Adjust this margin to match the width of the side panel */
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background for content area */
+  overflow-y: auto; /* Allow content to be scrollable if needed */
+  font-size: 16px; /* Slightly increased font size */
+  flex-grow: 1;
+}
+
+/* Highlight active link */
+.side-panel a.active {
+  color: #147ae6; /* Blue color for active link */
+}
+
+/* Hover color for active link */
+.side-panel a.active:hover {
+  color: #75b5fb; /* Darker blue color on hover for active link */
 }
