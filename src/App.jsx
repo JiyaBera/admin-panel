@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import AssetsManagement from './pages/Assets-management';
 import DeviceManagement from './pages/Device-management';
 import CustomerManagement from './pages/Customer-management';
@@ -18,7 +18,8 @@ const App = () => {
         <div className="content">
           <Header /> {/* Include Header component */}
           <Routes>
-            <Route path="/customer-management" element={<CustomerManagement />} />
+            <Route path="/" element={<Navigate to="/customer-management" />} /> {/* Redirect root to Customer Management */}
+            <Route path="/customer-management" element={<CustomerManagement />} initial /> {/* Set Customer Management as initial */}
             <Route path="/device-management" element={<DeviceManagement />} />
             <Route path="/logger-management" element={<LoggerManagement />} />
             <Route path="/assets-management" element={<AssetsManagement />} />

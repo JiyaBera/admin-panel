@@ -9,13 +9,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 210px; /* Increased width for better readability */
+  width: 200px; /* Increased width for better readability */
   height: 100vh;
-  background-color: #ffffff; /* White background */
+  background-color: #f4f4f4; /* White background */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
   padding: 20px;
   font-family: 'Roboto', sans-serif; /* Use a Google Font for better readability */
   z-index: 100; /* Ensure side panel is above content */
+  
 }
 
 /* List styles */
@@ -37,4 +38,13 @@
 
 .side-panel a:hover {
   color: #007bff; /* Blue color on hover */
+}
+
+.side-panel li {
+  margin-bottom: 0px;/* Increased margin for better separation */
+}
+
+.side-panel li.customer-management {
+  margin-bottom: 20px; /* Adjust as needed for more space */
+  margin-top: 50px;
 }
