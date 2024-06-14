@@ -1,14 +1,27 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './SidePanel.css'; // Import your CSS file
 
 const SidePanel = () => {
   return (
     <nav className="side-panel">
       <ul>
-        <li class="customer-management"><NavLink to="/customer-management" activeClassName="active">Customer Management</NavLink></li>
-        <li class="customer-management"><NavLink to="/device-management" activeClassName="active">Customer Device Management</NavLink></li>
-        <li class="customer-management"><NavLink to="/logger-management" activeClassName="active">Logger Management</NavLink></li>
-        <li class="customer-management"><NavLink to="/assets-management" activeClassName="active">Assets Management</NavLink></li>
+        <li className="customer-management">
+          <NavLink to="/customer-management" exact activeClassName="active">Customer Management</NavLink>
+        </li>
+        <li className="customer-management">
+          <NavLink to="/device-management" exact activeClassName="active">Customer Device Management</NavLink>
+        </li>
+        <li className="customer-management">
+          <NavLink to="/logger-management" exact activeClassName="active">Logger Management</NavLink>
+        </li>
+        <li className="customer-management">
+          <NavLink to="/assets-management" exact activeClassName="active">Assets Management</NavLink>
+        </li>
+        <li className="customer-management">
+          <NavLink to="/Login" exact activeClassName="active">Login</NavLink>
+        </li>
+
       </ul>
     </nav>
   );

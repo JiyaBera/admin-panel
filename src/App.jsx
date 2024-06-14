@@ -9,6 +9,8 @@ import Header from './components/Header'; // Import Header component
 import './components/SidePanel.css'; // Import SidePanel.css
 import './components/Header.css'; // Import Header.css
 import './App.css'; // Import App.css
+import Login from './pages/Login';
+
 
 const App = () => {
   return (
@@ -23,6 +25,7 @@ const App = () => {
             <Route path="/device-management" element={<DeviceManagement />} />
             <Route path="/logger-management" element={<LoggerManagement />} />
             <Route path="/assets-management" element={<AssetsManagement />} />
+            <Route path="/Login" element={<Login />} />
           </Routes>
         </div>
       </div>

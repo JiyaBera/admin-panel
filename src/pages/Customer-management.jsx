@@ -1,3 +1,5 @@
+//customer-management.jsx
+
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -131,14 +133,14 @@ const CustomerManagement = () => {
         <Box sx={{ mb: 3, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h1 style={{ fontSize: '4em', margin: 0 }}>Customer Management</h1>
           <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '0px' }}>
-            <Button variant="contained" color="primary" sx={{ mx: 1, fontSize: '1.0rem', minWidth: '120px', minHeight: '50px' }} onClick={() => handleOpen(null)}>
-              <span role="img" aria-label="Add" style={{ color: 'white', marginRight: '5px' }}>➕</span> Add Customer
+            <Button variant="contained" color="primary" sx={{ mx: 1, fontSize: '1.0rem', minWidth: '100px', minHeight: '50px' }} onClick={() => handleOpen(null)}>
+              <span role="img" aria-label="Add" style={{ color: 'white', marginRight: '5px' }}>➕</span> Add
             </Button>
-            <Button variant="contained" color="primary" sx={{ mx: 1, fontSize: '1.0rem', minWidth: '120px', minHeight: '50px' }} onClick={() => handleOpen(selectedRow)}>
-              <span role="img" aria-label="Edit" style={{ color: 'white', marginRight: '5px' }}>✏️</span> Edit Customer
+            <Button variant="contained" color="primary" sx={{ mx: 1, fontSize: '1.0rem', minWidth: '100px', minHeight: '50px' }} onClick={() => handleOpen(selectedRow)}>
+              <span role="img" aria-label="Edit" style={{ color: 'white', marginRight: '5px' }}>✏</span> Edit
             </Button>
-            <Button variant="contained" color="primary" sx={{ mx: 1, fontSize: '1.0rem', minWidth: '120px', minHeight: '50px' }} onClick={handleDelete}>
-              <span role="img" aria-label="Delete" style={{ color: 'white', marginRight: '5px' }}>❌</span> Delete Customer
+            <Button variant="contained" color="primary" sx={{ mx: 1, fontSize: '1.0rem', minWidth: '80px', minHeight: '50px' }} onClick={handleDelete}>
+              <span role="img" aria-label="Delete" style={{ color: 'white', marginRight: '5px' }}>❌</span> Delete
             </Button>
           </Box>
         </Box>

@@ -11,7 +11,7 @@
   left: 0;
   width: 200px; /* Increased width for better readability */
   height: 100vh;
-  background-color: #f4f4f4; /* White background */
+  background-color: #f4f4f4; /* White background */ 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
   padding: 20px;
   font-family: 'Roboto', sans-serif; /* Use a Google Font for better readability */
@@ -47,4 +47,19 @@
 .side-panel li.customer-management {
   margin-bottom: 20px; /* Adjust as needed for more space */
   margin-top: 50px;
+}
+
+.side-panel a.active {
+  font-weight: bold;
+  color: rgba(36, 36, 171, 0.951);
+}
+
+.side-panel a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed */
+  width: 100%;
+  height: 2px; /* Adjust as needed */
+  background-color: rgba(36, 36, 171, 0.951); /* Match the text color */
 }
