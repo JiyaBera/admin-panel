@@ -6,6 +6,9 @@ const SidePanel = () => {
   return (
     <nav className="side-panel">
       <ul>
+      <li className="customer-management">
+          <NavLink to="/Login" exact activeClassName="active">Login</NavLink>
+        </li>
         <li className="customer-management">
           <NavLink to="/customer-management" exact activeClassName="active">Customer Management</NavLink>
         </li>
@@ -18,10 +21,6 @@ const SidePanel = () => {
         <li className="customer-management">
           <NavLink to="/assets-management" exact activeClassName="active">Assets Management</NavLink>
         </li>
-        <li className="customer-management">
-          <NavLink to="/Login" exact activeClassName="active">Login</NavLink>
-        </li>
-
       </ul>
     </nav>
   );

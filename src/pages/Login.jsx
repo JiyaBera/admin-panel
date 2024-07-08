@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
 
 function LoginUi() {
@@ -25,7 +26,7 @@ function LoginUi() {
               <button className="login-button">Login</button>
             
             <p className="link">
-              <a href="#">Forgot password?</a> Or <a href="#">Sign Up</a>
+              <a href="/ForgotPassword">Forgot password?</a> Or <a href="#">Sign Up</a>
             </p>
           </div>
         </div>
